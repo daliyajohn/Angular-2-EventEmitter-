@@ -1,0 +1,12 @@
+<div style="margin-top:16px;">
+  <button (click)="value=1">Button1</button>
+  <button (click)="value=2">Button2</button>
+  <button (click)="value=3">Button3</button> 
+
+  <div [ngSwitch]="value">
+      <div *ngSwitchCase="1" style="margin-top:16px;">Hello1</div>
+      <div *ngSwitchCase="2" style="margin-top:16px;">Hello2</div>
+      <div *ngSwitchCase="3" style="margin-top:16px;">Hello3</div>
+      <div *ngSwitchDefault style="margin-top:16px;">Hello welcome</div>
+  </div>
+</div>
