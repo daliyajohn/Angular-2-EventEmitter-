@@ -11,6 +11,8 @@ import { NameListService } from '../shared/name-list/name-list.service';
   styleUrls: ['home.component.css'],
 })
 export class HomeComponent  {
-public value:any;
-
+  public value:any;
+  setPage() {
+    console.log();
+  }
 }
