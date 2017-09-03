@@ -12,6 +12,7 @@ import './operators';
   styleUrls: ['app.component.css'],
 })
 export class AppComponent {
+  public value:any;
   constructor() {
     console.log('Environment config', Config);
   }
