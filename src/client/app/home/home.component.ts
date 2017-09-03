@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NameListService } from '../shared/name-list/name-list.service';
+import { AppService } from '../app.service';
 
 /**
  * This class represents the lazy loaded HomeComponent.
@@ -12,7 +13,8 @@ import { NameListService } from '../shared/name-list/name-list.service';
 })
 export class HomeComponent  {
   public value:any;
+  constructor(public appservice:AppService) {}
   setPage() {
-    console.log();
+    this.appservice.step.emit(2);
   }
 }
