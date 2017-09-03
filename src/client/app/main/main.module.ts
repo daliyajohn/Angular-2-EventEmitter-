@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
-import { HomeComponent } from './home.component';
-import { HomeRoutingModule } from './home-routing.module';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { HomeRoutingModule } from './home/home-routing.module';
+import { HomeRoutingModule } from './home/home-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { NameListService } from '../shared/name-list/name-list.service';
 
@@ -10,4 +12,4 @@ import { NameListService } from '../shared/name-list/name-list.service';
   exports: [HomeComponent],
   providers: [NameListService]
 })
-export class HomeModule { }
+export class MainModule { }
