@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NameListService } from '../../shared/name-list/name-list.service';
-import { AppService } from '../../app.service';
+import { MainService } from '../main.service';
 
 /**
  * This class represents the lazy loaded HomeComponent.
@@ -13,8 +13,8 @@ import { AppService } from '../../app.service';
 })
 export class HomeComponent  {
   public value:any;
-  constructor(public appservice:AppService) {}
-  setPage() {
-    this.appservice.step.emit(2);
+  constructor(public mainservice:MainService) {}
+  setPage2() {
+    this.mainservice.step.emit(2);
   }
 }

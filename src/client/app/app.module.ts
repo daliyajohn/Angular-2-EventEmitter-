@@ -4,14 +4,13 @@ import { APP_BASE_HREF } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
-import { AboutModule } from './main/about/about.module';
-import { HomeModule } from './main/home/home.module';
+import { MainRoutingModule } from './main/main-routing.module';
+import { MainModule } from './main/main.module';
 import { SharedModule } from './shared/shared.module';
 import { AppService } from './app.service';
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, AppRoutingModule, AboutModule, HomeModule, SharedModule.forRoot()],
+  imports: [BrowserModule, HttpModule, MainModule,MainRoutingModule, AppRoutingModule, SharedModule.forRoot()],
   declarations: [AppComponent],
   providers: [
     AppService

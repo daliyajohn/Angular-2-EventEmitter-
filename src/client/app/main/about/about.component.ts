@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { AppService } from '../../app.service';
-/**
- * This class represents the lazy loaded AboutComponent.
- */
+import { MainService } from '../main.service';
+
 @Component({
   moduleId: module.id,
   selector: 'sd-about',
@@ -10,6 +8,8 @@ import { AppService } from '../../app.service';
   styleUrls: ['about.component.css']
 })
 export class AboutComponent {
-  constructor(public appservice:AppService) {
+  constructor(public mainservice:MainService) {}
+  setPage1() {
+    this.mainservice.step.emit(3);
   }
 }

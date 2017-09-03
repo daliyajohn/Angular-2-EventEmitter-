@@ -9,7 +9,7 @@ import { AppService } from '../app.service';
   templateUrl: 'main.component.html',
   styleUrls: ['main.component.css']
 })
-export class AboutComponent {
+export class MainComponent {
   constructor(public appservice:AppService) {
   }
 }
