@@ -8,13 +8,12 @@ import { MainRoutingModule } from './main/main-routing.module';
 import { MainModule } from './main/main.module';
 import { SharedModule } from './shared/shared.module';
 import { AppService } from './app.service';
+import { MainService } from './main/main.service';
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, MainModule,MainRoutingModule, AppRoutingModule, SharedModule.forRoot()],
+  imports: [BrowserModule, HttpModule,MainModule,MainRoutingModule, AppRoutingModule, SharedModule.forRoot()],
   declarations: [AppComponent],
-  providers: [
-    AppService
-  ],
+  providers: [ AppService, MainService],
   bootstrap: [AppComponent]
 
 })

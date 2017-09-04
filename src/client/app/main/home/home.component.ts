@@ -14,7 +14,4 @@ import { MainService } from '../main.service';
 export class HomeComponent  {
   public value:any;
   constructor(public mainservice:MainService) {}
-  setPage2() {
-    this.mainservice.step.emit(2);
-  }
 }

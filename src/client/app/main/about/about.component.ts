@@ -9,7 +9,4 @@ import { MainService } from '../main.service';
 })
 export class AboutComponent {
   constructor(public mainservice:MainService) {}
-  setPage1() {
-    this.mainservice.step.emit(3);
-  }
 }
